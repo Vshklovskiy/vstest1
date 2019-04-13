@@ -61,9 +61,15 @@ carousel.querySelector('.next').onclick = function() {
         let imgpath = link.getAttribute('data-url');
         overlayImg.src = imgpath;
         overlay.style.display = 'block';
-        //alert(img);
-        //modalImg.src = this.src;
     }
   }
+
+// hide overlay
+overlay.onclick = function(evt) {
+  overlay.style.display = 'none';
+}
+overlayImg.onclick = function(evt) {
+  overlay.style.display = 'none';
+}
 
     }
