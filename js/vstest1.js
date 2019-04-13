@@ -50,4 +50,20 @@ carousel.querySelector('.next').onclick = function() {
   list.style.marginLeft = position + 'px';
 };
 
+
+// show big picture overlay
+  var links = document.querySelectorAll('.link');
+  var overlay = document.getElementById('overlay');
+  var overlayImg = document.getElementById('overlayImg');
+  for (var i = 0; i < links.length; i++) {
+  	let link = links[i];
+    link.onclick = function(evt) {
+        let imgpath = link.getAttribute('data-url');
+        overlayImg.src = imgpath;
+        overlay.style.display = 'block';
+        //alert(img);
+        //modalImg.src = this.src;
+    }
+  }
+
     }
