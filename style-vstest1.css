@@ -22,7 +22,6 @@ html, body {
 /* carousel ui */
 
 .carousel {
-  width: 550px;
   position: relative;
 }
 
@@ -33,7 +32,6 @@ html, body {
 }
 
 .gallery {
-  width: 450px;
 	margin: auto;
   overflow: hidden;
 }
@@ -52,6 +50,29 @@ html, body {
   display: inline-block;
 }
 
+/* Large desktops and laptops */
+@media screen and (min-width: 1200px) {
+.carousel {width: 1150px;}
+.gallery {width: 1050px;}
+}
+
+/* Large desktops and laptops */
+@media screen and (max-width: 1200px) {
+	.carousel {width: 850px;}
+	.gallery {width: 750px;}
+}
+
+/* Portrait tablets and small desktops */
+@media screen and (max-width: 980px) {
+	.carousel {width: 550px;}
+	.gallery {width: 450px;}
+}
+
+/* Landscape phones and smaller */
+@media screen and (max-width: 650px) {
+	.carousel {width: 250px;}
+	.gallery {width: 150px;}
+}
 
 /* arrows */
 
